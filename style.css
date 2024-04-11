@@ -224,6 +224,61 @@ aside p {
     width: 100%;
     object-fit: cover; /*自動裁切超出使吋的影像*/
 }
+/*-----CONTACT-----*/
+#contact {
+    background-image: url(/images/contact-bg.jpg);
+    min-height: 100vh;
+}
+/*-----表單-----*/
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea[id="message"] {
+    background: rgba(255, 255, 255, .5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/*------商店資料-地圖-----*/
+#location {
+    padding: 4% 0; 
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
 /* -----手機板----- */
 /*使用 0~600px 的畫面尺寸瀏覽時，要讓 <h1> 標籤的文字變成藍色*/
 @media (max-width: 600px) {
@@ -294,6 +349,23 @@ aside p {
     }
     .big-box img {
         height: 94%;
+    }
+    /*-----CONTACT-----*/
+    #contact .page-title {
+        margin-top: 40px;
+    }
+    /*-----表單-----*/
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+    /*-----商店資料-地圖*/
+    #location .wrapper {
+        flex-direction: column;
+    }
+    .location-info {
+        width: 100%;
     }
 
 }
